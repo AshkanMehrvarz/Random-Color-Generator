@@ -39,19 +39,92 @@ html body .main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+html body .main .color-code {
+  width: 80%;
+  height: 10%;
+  background: #c8c8c8;
+  background: -webkit-gradient(linear, left bottom, left top, from(#b2b2b2), to(white));
+  background: linear-gradient(360deg, #b2b2b2 0%, white 100%);
+  border-radius: 20px 20px 0 0;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+html body .main .color-code #color-code {
+  background-color: #6583cf;
+  padding: .5rem 0;
+  border-radius: 5px;
+  font-size: x-large;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  text-align: center;
+}
+
+html body .main .color-code #copy-section {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 5px;
+  padding: .4rem 0;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+html body .main .color-code #copy-section span {
+  font-weight: bold;
+}
+
+html body .main .color-code #copy-section i {
+  font-size: xx-large;
+  font-weight: bold;
+  color: #007bff;
+  text-shadow: -2px 2px 1px #003e81;
+}
+
+html body .main .color-code #copy-section:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
 html body .main .generate {
+  margin-top: 2rem;
   width: 100%;
   height: 10%;
   display: -webkit-box;
@@ -79,10 +152,10 @@ html body .main .generate button {
   border-radius: 10px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  color: black;
+  color: #313131;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
-  font-weight: 300;
+  font-weight: 500;
   cursor: pointer;
 }
 
